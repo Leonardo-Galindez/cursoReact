@@ -5,9 +5,13 @@ export function Contador() {
 
     return (
         <div className="container">
-            <button className="boton" onClick={() => setCount(count + 1)}>+</button>
-            <button className="boton" onClick={() => setCount(count - 1)}>-</button>
-            <h1>{count}</h1>
+            <div className='container-buttons'>
+                <button className="boton" onClick={() => setCount(count + 1)}>+</button>
+                <button className="boton" onClick={() => setCount(count - 1)}>-</button>
+            </div>
+            <div className="container-count">
+                <h1>{count}</h1>
+            </div>
         </div>
     );
 }
